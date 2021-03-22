@@ -9,5 +9,5 @@ Project Description : [Movie Theater Manager](https://docs.google.com/document/d
 
 - 
 - Jiatian Wang wang.jiati@northeastern.edu
--
+- Yicheng Jiang jiang.yich@northeastern.edu
 -
