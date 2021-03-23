@@ -7,7 +7,7 @@ Project Description : [Movie Theater Manager](https://docs.google.com/document/d
 -------
 Group Member 
 
-- 
+- Xingbo Liu liu.xingb@northeastern.edu
 - Jiatian Wang wang.jiati@northeastern.edu
 - Yicheng Jiang jiang.yich@northeastern.edu
 - Xiao Liu liu.xiao10@northeastern.edu
