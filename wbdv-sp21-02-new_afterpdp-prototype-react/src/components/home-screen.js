@@ -9,9 +9,9 @@ const HomeScreen = () => {
                 Search
             </Link>
             <br/>
-            <Link to="/details">
-                Details
-            </Link>
+            {/*<Link to="/details">*/}
+            {/*    Details*/}
+            {/*</Link>*/}
         </div>
     )
 }

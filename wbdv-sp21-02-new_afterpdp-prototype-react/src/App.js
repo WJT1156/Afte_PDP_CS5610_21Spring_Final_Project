@@ -1,3 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
+import '@fortawesome/fontawesome-free/css/all.min.css'
 import SearchScreen from "./components/search-screen";
 import DetailsScreen from "./components/details-screen";
 import {BrowserRouter, Route} from "react-router-dom";

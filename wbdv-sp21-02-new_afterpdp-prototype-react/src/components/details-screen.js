@@ -21,16 +21,33 @@ const DetailsScreen = () => {
             <h2>{movie.Title}</h2>
             <p>
                 <img src={movie.Poster} width={100} style={{float: "right"}}/>
-                {movie.Plot}
+                Plot:
+                <div>
+                    {movie.Plot}
+                </div>
+
             </p>
             <div>
-                {movie.Actors}
+                Actors:
                 <ul>
                     {
                         movie.Actors && movie.Actors.split(",")
                             .map((actor)=>{
                                 return(
                                     <li>{actor}</li>
+                                )
+                            })
+                    }
+                </ul>
+                <div>
+                    Ratings:
+                </div>
+                <ul>
+                    {
+                        movie.Ratings && movie.Ratings
+                            .map((rating)=>{
+                                return(
+                                    <li>{`${rating.Source} : ${rating.Value}` }</li>
                                 )
                             })
                     }

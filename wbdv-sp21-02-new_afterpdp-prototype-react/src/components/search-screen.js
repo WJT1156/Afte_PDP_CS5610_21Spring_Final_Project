@@ -7,13 +7,13 @@ const SearchScreen = () => {
     const {title} = useParams()
     const [searchTitle, setSearchTitle] = useState(title)
     const [results, setResults] = useState({Search: []})
-    useEffect(() => {
-        setSearchTitle(title)
-        findMoviesByTitle(title)
-    }, [])
-    const findMoviesByTitle = (title) => {
-        history.push(title)
-        movieService.findMoviesByTitle(title)
+    // useEffect(() => {
+    //     setSearchTitle(title)
+    //     findMoviesByTitle(title)
+    // }, [])
+    const findMoviesByTitle = (searchTitle) => {
+        history.push(`/search/${searchTitle}`)
+        movieService.findMoviesByTitle(searchTitle)
             .then((results) => {
                 setResults(results)
             })
@@ -21,24 +21,24 @@ const SearchScreen = () => {
     return(
         <div>
             <h2>Search Screen</h2>
-            <div className="row">
-                <div className="col-9">
+            {/*<div className="row">*/}
+            {/*    <div className="col-9">*/}
                     <input value={searchTitle}
                            onChange={(event) => {
                                setSearchTitle(event.target.value)
                            }}
                            className="form-control"/>
-                </div>
-                <div className="col-3">
+                {/*</div>*/}
+                {/*<div className="col-3">*/}
                     <button
                         onClick={() => {
                             findMoviesByTitle(searchTitle)
                         }}
-                        className="btn btn-primary btn-block">
+                        className="btn btn-primary">
                         Search
                     </button>
-                </div>
-            </div>
+                {/*</div>*/}
+            {/*</div>*/}
             <br/>
             <ul className="list-group">
                 {
