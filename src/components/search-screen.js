@@ -21,24 +21,28 @@ const SearchScreen = () => {
     return(
         <div>
             <h2>Search Screen</h2>
-            {/*<div className="row">*/}
-            {/*    <div className="col-9">*/}
-                    <input value={searchTitle}
-                           onChange={(event) => {
-                               setSearchTitle(event.target.value)
-                           }}
-                           className="form-control"/>
-                {/*</div>*/}
-                {/*<div className="col-3">*/}
-                    <button
-                        onClick={() => {
-                            findMoviesByTitle(searchTitle)
-                        }}
-                        className="btn btn-primary">
-                        Search
-                    </button>
-                {/*</div>*/}
-            {/*</div>*/}
+                <div className="row">
+                    <div className="col-9">
+                        <input width="80%" value={searchTitle}
+                               onChange={(event) => {
+                                   setSearchTitle(event.target.value)
+                               }}
+                               className="form-control"/>
+                    </div>
+
+                    <div className="col-3">
+                        <button
+                            onClick={() => {
+                                findMoviesByTitle(searchTitle)
+                            }}
+                            className="btn btn-primary">
+                            Search
+                        </button>
+                    </div>
+
+                </div>
+
+
             <br/>
             <ul className="list-group">
                 {

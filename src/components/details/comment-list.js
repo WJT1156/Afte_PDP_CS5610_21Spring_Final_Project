@@ -1,5 +1,5 @@
 import {useParams} from "react-router-dom";
-import commentService from '../services/comment-service'
+import commentService from '../../services/comment-service'
 import {useEffect, useState} from "react";
 import Comment from "./comment";
 import {connect} from "react-redux";

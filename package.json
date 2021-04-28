@@ -40,6 +40,8 @@
     ]
   },
   "devDependencies": {
-    "react-redux": "^7.2.3"
+    "react-google-login": "^5.2.2",
+    "react-redux": "^7.2.3",
+    "sfcookies": "^1.0.2"
   }
 }
