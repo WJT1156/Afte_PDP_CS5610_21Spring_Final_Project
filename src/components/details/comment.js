@@ -5,8 +5,7 @@ const Comment = ({comment}) => {
         <>
             <div className="row border">
                 <div className="col-3 border-right">
-                    {/*{comment.userId}*/}
-                    userId
+                    {comment.userName}
                 </div>
                 <div className="col-9">
                     <p>
